@@ -30,16 +30,19 @@
     padding-top: 60px;
 }
 
+
+.bottom__space ,.group__text>h3{
+    margin-bottom: 10px;
+}
+
 /* common style */
 
-
+/* header start */
 
 header{
     background: rgba(255, 144, 14, 0.1);
     width: 100%;
-    height: 100vh;
-    padding: 25px 180px 0;
-
+    padding: 25px 180px ;
 }
 .nav{
     display: flex;
@@ -52,6 +55,8 @@ ul{
 }
 li{
     list-style: none;
+    font-size: 18px;
+    font-weight: 600;
 }
 .banner{
     width: 100%;
@@ -65,7 +70,6 @@ li{
 }
 .banner-text >h1{
     font-size: 40px;
-    margin-bottom: 10px;
 }
 .banner-text >p{
     color: #727272;
@@ -81,9 +85,20 @@ li{
     height: 400px;
     margin: 0 auto;
 }
+
+
+/* header end */
+
+/* main start */
+
 main{
     padding: 85px 240px;
 }
+
+
+/* quick list of our features  start*/
+
+
 .quick__list{
     display: flex;
     align-items: center;
@@ -106,7 +121,6 @@ main{
     font-size: 45px;
     color: #727272;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 .of__our{
     font-weight: bold;
@@ -116,10 +130,15 @@ main{
     color: var(--primary-color);
 }
 .quick__text>p{
-    color:#727272;
     line-height: 26px;
     margin-bottom: 15px;
 }
+
+/* quick list of our features end */
+
+
+/* Features you will love & enjoy start */
+
 .love__enjoy{
     display: flex;
     gap: 90px;
@@ -133,7 +152,6 @@ main{
 .enjoy__heding>h2{
     font-size: 45px;
     border-left: 4px solid var(--primary-color);
-    margin-bottom: 10px;
 }
 .group__text{
     padding: 20px;
@@ -154,6 +172,14 @@ main{
     left: -44px;
     font-size: 20px;
 }
+
+
+/* Features you will love & enjoy start */
+
+
+/* Some Facts start */
+
+
 .facts__text{
     width: 40%;
     line-height: 25px;
@@ -178,6 +204,13 @@ main{
     background-color: rgb(228, 141, 184);
     border: 0;
 }
+
+
+/* Some Facts end */
+
+
+/* Our Sponspors start */
+
 .sponspors__text{
     width: 450px;
     margin: 50px auto;
@@ -189,6 +222,15 @@ main{
     flex-wrap: wrap;
     margin: 50px 0;
 }
+
+
+/* Our Sponspors end */
+
+/* main end */
+
+/* footer start */
+
+
 footer{
     background-color: #FFF4E7;
     text-align: center ;
@@ -197,17 +239,26 @@ footer{
     margin: 0 240px 50px;
     color: #424242;
 }
-.none{
-    display: none;
-}
 
 
+
+
+
+/* footer end */
+
+
+/* media query start */
 
 @media screen and (max-width:576px) {
     header{
         padding: 10px ;
         height: auto ; 
     }
+    /* common */
+
+    
+
+    /* common */
     .nav{
         padding: 10px 0 0;
         flex-direction: column;
@@ -263,7 +314,8 @@ footer{
         gap: 20px;
     }
     .facts__text{
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
     }
     .achiev__box{
         width: 50%;
@@ -278,3 +330,5 @@ footer{
         margin: 0;
     }
 }
+
+/* media query end */
