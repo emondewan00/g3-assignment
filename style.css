@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --primary-color:#FF900E;
+}
+
+/* common style */
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 3px;
+}
+.gap__top{
+    padding-top:70px ;
+}
+.p__font{
+    font-size: 16px;
+    color: #727272;
+}
+
+.padding{
+    padding-top: 60px;
+}
+
+/* common style */
+
+
+
+header{
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    height: 100vh;
+    padding: 25px 180px 0;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+}
+li{
+    list-style: none;
+}
+.banner{
+    width: 100%;
+}
+.banner-text{
+    text-align: center;
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 102px 0 0;
+}
+.banner-text >h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.banner-text >p{
+    color: #727272;
+    margin-bottom: 32px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.img> img{
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+}
+main{
+    padding: 85px 240px;
+}
+.quick__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.grid__imgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.grid__img{
+    width: 100%;
+    height: auto;
+}
+.quick__text{
+    width: 400px;
+}
+.quick__text>h2{
+    font-size: 45px;
+    color: #727272;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.of__our{
+    font-weight: bold;
+    color: black;
+}
+.feature{
+    color: var(--primary-color);
+}
+.quick__text>p{
+    color:#727272;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.love__enjoy{
+    display: flex;
+    gap: 90px;
+    width: 95%;
+    margin: 0 auto;
+}
+.enjoy__text{
+    height: 100vh;
+    width: 38%;
+}
+.enjoy__heding>h2{
+    font-size: 45px;
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+.group__text{
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 5px;
+}
+
+.enjoy__img img{
+    width: 30vw;
+    height: 90vh;
+    /* position: relative; */
+}
+.experience{
+    position: relative;
+    padding: 30px;
+    top: -70px;
+    left: -44px;
+    font-size: 20px;
+}
+.facts__text{
+    width: 40%;
+    line-height: 25px;
+}
+.facts__text >h1{
+    margin-bottom: 20px;
+}
+.achiev__detail{
+    display: flex;
+    justify-content: space-around;
+}
+.achiev__box{
+    width: 15%;
+    text-align: center;
+    padding: 20px 0px;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 4px 4px 5px lightgray;
+    transition: all 1.5s .5s;
+}
+.achiev__box:hover{
+    background-color: rgb(228, 141, 184);
+    border: 0;
+}
+.sponspors__text{
+    width: 450px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors__icon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+footer{
+    background-color: #FFF4E7;
+    text-align: center ;
+    height: 10vh;
+    padding-top: 35px;
+    margin: 0 240px 50px;
+    color: #424242;
+}
+.none{
+    display: none;
+}
+
+
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 10px ;
+        height: auto ; 
+    }
+    .nav{
+        padding: 10px 0 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    ul{
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .banner-text{
+        width: 100%;
+        padding: 30px 10px 0;
+    }
+    .img{
+        margin-top: 70px;
+    }
+    .img img{
+        width: 100%;
+        height: auto;
+        padding: 0px 20px ;
+    }
+    main{
+        padding:10px 0 0px
+    }
+    .quick__list{
+        flex-direction: column;
+    }
+    .grid__imgs{
+        grid-template-columns: auto;
+    }
+    .quick__text{
+        width: 95%;
+    }
+    .love__enjoy{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .enjoy__text{
+        width: 100%;
+        height: auto;
+    }
+    .enjoy__img img{
+        width: 100%;
+        height: auto;
+    }
+    .experience{
+        position:sticky;
+        margin: 0 77px;
+    }
+    .achiev__detail{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .facts__text{
+        width: 100%;
+    }
+    .achiev__box{
+        width: 50%;
+    }
+    .sponspors__text{
+        width: 100%;
+    }
+    .sponspors__icon{
+        row-gap: 10px;
+    }
+    footer{
+        margin: 0;
+    }
+}
